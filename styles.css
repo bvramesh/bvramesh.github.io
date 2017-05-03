@@ -1,0 +1,530 @@
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  letter-spacing: 1px;
+  line-height: 24px;
+}
+
+/*=====================intro-section=======================*/
+
+.intro-section{
+   height: 100%;
+}
+/*.welcome-area:after{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: .7;
+  z-index: -1;
+}*/
+
+.welcome-area {
+   background: url(images/cycle.jpeg); /*** intro-section background image ***/
+   background-size: cover;
+   z-index: 1;
+   position: relative;
+   height: 100%;
+}
+
+/*======================= End of intro-section=======================*/
+
+/*=======================Header Section====================*/
+
+.custom-navbar {
+  background: transparent;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.logo a {
+  color: #fff;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 4px;
+  margin-top: 28px;
+  text-transform: uppercase;
+  /*transition: all 0.4s ease-in-out 0s;*/
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.main-menu {
+  text-transform: uppercase;
+}
+
+.main-menu
+ul.navbar-nav {
+  float: right;
+}
+
+.main-menu
+ul.nav.navbar-nav li.active {
+  position: relative;
+}
+
+
+.main-menu
+ul.nav.navbar-nav li.active a.theme-color {
+  color: red;
+}
+.main-menu ul
+li:hover a {
+  color: #f9f9f9;
+  background: none;
+}
+
+.main-menu
+ul.nav.navbar-nav li a {
+  color: #fff;
+  font-weight: 500;
+  font-size: 12px;
+  padding: 30px 13px;
+  /*transition: all 0.4s ease-in-out;*/
+}
+
+.custom-navbar.top-nav-collapse .logo a{
+  color: #fff;
+  margin-top: 20px;
+}
+.custom-navbar.top-nav-collapse .main-menu ul.navbar-nav li a{
+  color: #fff;
+  padding: 22px 13px;
+}
+
+
+.custom-navbar.top-nav-collapse {
+   background: #000;
+
+}
+
+
+/*=======================End of Header Section====================*/
+
+/*=======================welcome-area=========================*/
+
+ .welcome-area{
+    height: 100%;
+    position: relative;
+    z-index: 3;
+ }
+ .welcome-table{
+    display: table;
+    position: absolute;
+    /*top: 35%;*/
+    width: 100%;
+    height: 100%;
+    text-align: center;
+ }
+ .welcome-cell{
+    display: table-cell;
+    vertical-align: middle;
+ }
+ .welcome-text{
+
+ }
+ .welcome-text h1{
+    font-size: 110px;
+    color: #fff;
+    margin-bottom: 15px;
+    font-weight: 700;
+    text-transform: capitalize;
+    letter-spacing: 8px;
+    -webkit-animation: tag-bounce 2s linear;
+    animation: tag-bounce 2s linear;
+ }
+
+ .welcome-text h3{
+    color: #fff;
+    font-weight: 500;
+    font-size: 20px;
+    text-transform: capitalize;
+    letter-spacing: 3px;
+ }
+
+ .header-text.btn {
+   border: 1px solid #ffffff;
+   border-radius: 0;
+   padding: 10px 30px;
+   height: 100px;
+ }
+
+ .header-text > h2 {
+   color: #ffffff;
+   font-weight: 700;
+   font-size: 46px;
+ }
+
+ span.typed-cursor {
+   top: -5px;
+   position: relative;
+ }
+
+ .typed-cursor {
+   opacity: 1;
+   padding: 10px 2px;
+   background: #ffffff;
+   margin: 10px;
+   -webkit-animation: blink 0.5s linear infinite;
+   /*-moz-animation: blink 0.5s linear infinite;*/
+ }
+
+ .welcome-area {
+   -webkit-background-size: cover;
+   background-size: cover;
+   background-attachment: fixed;
+   box-shadow: 5px 5px 5px rgba(68,68,68,0.6);
+   position: relative;
+   z-index: 1;
+ }
+
+ /*.quotes-area {
+   background: url(images/computer.jpeg);
+   https://placehold.it/800x1050
+   -webkit-background-size: cover;
+   background-size: cover;
+   background-attachment: fixed;
+   position: relative;
+   z-index: 1;
+ }*/
+
+
+ /*-webkit-background-size: cover;
+ background-size: cover;
+ background-attachment: fixed;
+ position: relative;
+ z-index: 1;*/
+
+/*--------------Animations------------------*/
+@keyframes tag-bounce {
+  0% {
+    /*-moz-transform: scale(0);
+    -ms-transform: scale(0);*/
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+  100% {
+    /*-moz-transform: scale(1);
+    -ms-transform: scale(1);*/
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+
+
+/*=======================welcome-area=========================*/
+
+/*========================Section Area============================*/
+
+.about-section {
+  background: #f0f0f0;
+  padding: 100px 0;
+
+}
+.author-image {
+  text-align: center;
+}
+
+.author-image > img {
+  max-width: 100%;
+  height: auto;
+}
+
+.about-text {
+  padding: 20px 0;
+}
+
+.about-text h3 {
+  font-size: 32px;
+  font-weight: 700;
+}
+.about-text h4 {
+  font-size: 24px;
+  font-weight: 500;
+}
+.about-text p {
+  font-size: 16px;
+  line-height: 28px;
+}
+
+.btn.extra, a.btn.extra {
+  background: #f0f0f0;
+  color: #000;
+}
+
+.about-text .btn {
+  margin-right: 15px;
+  margin-top: 15px;
+}
+
+.btn, a.btn {
+  border-radius: 48px;
+  font-size: 12px;
+  font-weight: 500;
+  height: 48px;
+  letter-spacing: 0.2em;
+  line-height: 48px;
+  overflow: hidden;
+  padding: 0 30px;
+  text-align: center;
+  text-transform: uppercase;
+  box-shadow: 0 7px 16px 0 rgba(50, 50, 50, 0.2);
+}
+
+/*========================End of Section Area============================*/
+
+
+/*========================Service Section============================*/
+
+.service-section {
+  padding: 65px 0;
+}
+
+.section-title {
+  padding: 30px 0;
+  margin-bottom: 25px;
+  padding-left: 12px;
+}
+
+.service-icon {
+  float: left;
+  width: 40px;
+  font-size: 38px;
+  line-height: 0;
+}
+
+.service-content {
+  margin-left: 55px;
+}
+
+.service-content h3 {
+  letter-spacing: 1px;
+  font-size: 18px;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.service-space {
+  height: 50px;
+}
+
+
+/*========================End of Service Section============================*/
+
+/*========================Quote Section============================*/
+
+.quotes-area {
+  background: url(images/computer.jpeg);
+  /*https://placehold.it/800x1050*/
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  z-index: 1;
+}
+
+.section-padding {
+  padding: 100px 0;
+}
+
+.quotes-content h3 {
+  font-size: 42px;
+  color: #fff;
+  margin-bottom: 25px;
+  font-weight: 700;
+}
+
+.quotes-content p {
+  color: #fff;
+}
+
+.btn.theme-color,
+a.btn.theme-color {
+  background: red;
+  color: #fff;
+}
+
+.quotes-content a {
+  margin-top: 25px;
+  font-weight: 700;
+}
+
+/*========================End of Quote Section============================*/
+
+/*========================Contact Section============================*/
+
+.contact-info {
+  background: #f0f0f0;
+}
+
+.section-title {
+  color: #000;
+  /*margin-bottom: 65px;*/
+  display: inline-block;
+  padding-left: 12px;
+}
+
+.section-title h2 {
+  font-size: 28px;
+  position: relative;
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+.section-title p {
+  font-size: 14px;
+}
+
+.contact-form {
+  position: relative;
+}
+
+.contact-form .form-group {
+  margin-bottom: 20px;
+}
+
+.form-control {
+  padding: 15px;
+  height: auto;
+  box-shadow: none;
+  border: none;
+  background: #fff;
+  border-radius: 5px;
+}
+
+textarea.form-control {
+  resize: vertical;
+  height: 120px
+}
+
+.full-adress {
+  /*margin-top: 60px;*/
+  /*margin-left: 40px;*/
+}
+
+.contact-padding.col-md-12 {
+  padding: 15px;
+  background: #fff;
+  margin-bottom: 15px;
+  border-radius: 15px;
+}
+
+.full-adress p.phone,
+.full-adress p.mail,
+.full-adress p.adress {
+  position: relative;
+  /*padding-left: 25px;*/
+  font-size: 16px;
+  line-height: 24px;
+  color: #000;
+  margin: 0;
+}
+
+.full-adress p.phone a,
+.full-adress p.mail a {
+  text-decoration: none;
+  color: #000;
+  font-size: 16px;
+}
+
+.full-adress .fa-phone::before,
+.full-adress .fa-envelope::before,
+.full-adress .fa-thumb-tack::before {
+  padding-right: 10px;
+}
+
+/*========================End of Contact Section============================*/
+
+
+/*========================Contact Section============================*/
+
+.footer-info {
+  background-color: #fff;
+  padding: 110px 0;
+}
+
+.footer-text p {
+  font-size: 16px;
+  color: #000;
+  margin-bottom: 0px;
+}
+
+.social-icon {
+  margin-top: 10px;
+  margin-left: -5px;
+  text-align: center;
+}
+
+.social-icon a {
+  width: 32px;
+  height: 32px;
+  color: #000;
+  display: inline-table;
+  text-align: center;
+  font-size: 16px;
+  margin-left: 5px;
+  margin-bottom: 15px;
+}
+
+.social-icon a i {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+/*=======================End of footer=====================*/
+
+/*=======================Media Queries======================*/
+
+@media only screen and (max-width: 767px){
+  .custom-navbar {
+    padding: 12px 0;
+    -webkit-transition: all 0.4s ease-in-out;
+    background: #000;
+  }
+}
+
+@media only screen and (max-width: 768px){
+  .header-text.btn {
+    height: auto;
+    white-space: inherit;
+  }
+  .full-adress {
+    margin-top: 40px;
+  }
+
+}
+
+@media only screen and (max-width: 990px) {
+  .full-adress {
+    margin-top: 40px;
+  }
+}
+
+@-keyframes blink{
+   0% { opacity:1; }
+   50% { opacity:0; }
+   100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+   0% { opacity:1; }
+   50% { opacity:0; }
+   100% { opacity:1; }
+}
+@-moz-keyframes blink{
+   0% { opacity:1; }
+   50% { opacity:0; }
+   100% { opacity:1; }
+}
